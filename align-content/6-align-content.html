@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-items: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h3>stretch</h3>
+    <div class="container stretch">
+        <div class="item">Esse texto tem um tamanho menor que o central.</div>
+        <div class="item">Esse é somente um exemplo.</div>
+        <div class="item">Seguindo a sequencia com um texto  menor.</div>
+        <div class="item">Este texto é somente um exemplo para que possamos verificar o tamanho de cada setor da div e esse será um pouco maior.</div>
+        <div class="item">Este tem um tamanho maior que todos e menor que o tamanho do texto que está no centro.</div>
+        <div class="item">Este tem um tamanho maior que todos e menor que o tamanho do texto que está no centro.</div>
+        <div class="item">Este tem um tamanho maior que todos e menor que o tamanho do texto que está no centro.</div>
+    </div>
+
+    <h3>center</h3>
+    <div class="container center">
+        <div class="item">Esse texto tem um tamanho menor que o central.</div>
+        <div class="item">Esse é somente um exemplo.</div>
+        <div class="item">Seguindo a sequencia com um texto  menor.</div>
+        <div class="item">Este texto é somente um exemplo para que possamos verificar o tamanho de cada setor da div e esse .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+        <div class="item">Este tem um tamanho maior que todos .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+    </div>
+
+    <h3>flex start</h3>
+    <div class="container start">
+        <div class="item">Esse texto tem um tamanho menor que o central.</div>
+        <div class="item">Esse é somente um exemplo.</div>
+        <div class="item">Seguindo a sequencia com um texto  menor.</div>
+        <div class="item">Este texto é somente um exemplo para que possamos verificar o tamanho de cada setor da div e esse .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+        <div class="item">Este tem um tamanho maior que todos .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+    </div>
+
+    <h3>flex end</h3>
+    <div class="container end">
+        <div class="item">Esse texto tem um tamanho menor que o central.</div>
+        <div class="item">Esse é somente um exemplo.</div>
+        <div class="item">Seguindo a sequencia com um texto  menor.</div>
+        <div class="item">Este texto é somente um exemplo para que possamos verificar o tamanho de cada setor da div e esse .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+        <div class="item">Este tem um tamanho maior que todos .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+    </div>
+
+    <h3>space around</h3>
+    <div class="container center space-around">
+        <div class="item">Esse texto tem um tamanho menor que o central.</div>
+        <div class="item">Esse é somente um exemplo.</div>
+        <div class="item">Seguindo a sequencia com um texto  menor.</div>
+        <div class="item">Este texto é somente um exemplo para que possamos verificar o tamanho de cada setor da div e esse .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+        <div class="item">Este tem um tamanho maior que todos .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+    </div>
+
+    <h3>space-between</h3>
+    <div class="container center space-between">
+        <div class="item">Esse texto tem um tamanho menor que o central.</div>
+        <div class="item">Esse é somente um exemplo.</div>
+        <div class="item">Seguindo a sequencia com um texto  menor.</div>
+        <div class="item">Este texto é somente um exemplo para que possamos verificar o tamanho de cada setor da div e esse .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+        <div class="item">Este tem um tamanho maior que todos .</div>
+        <div class="item">Este tem um tamanho maior que todos.</div>
+    </div>
+
+</body>
+</html>
